@@ -1,0 +1,22 @@
+<form  name="myForm" novalidate>
+    <div id="container">
+        <div id="inner_container">
+            <div id="header">
+                <span>Justin Uy - {{userData.email}}</span>
+            </div>
+            <form method="post" action="#">
+                <input type="text"  id="fname" name="fname" ng-model="userData.firstName" ng-pattern="/^[a-zA-Z '-]*$/" required >
+                <span class="error" ng-show="(myForm.fname.$error.required || myForm.fname.$error.pattern) && (myForm.fname.$dirty || form_submit)"> Must include first name</span><br><br>
+                <input type="text"  id="lname" name="lname" ng-model="userData.lastName" ng-pattern="/^[a-zA-Z '-]*$/" required>
+                <span class="error" ng-show="(myForm.lname.$error.required || myForm.lname.$error.pattern) && (myForm.lname.$dirty || form_submit)" > Must include last name</span><br><br>
+                <input type="email" name="email"  id="email" ng-model="userData.email"  ng-pattern="/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/" required>
+                <span class="error"  ng-show="(myForm.email.$error.required || myForm.email.$error.pattern) && (myForm.email.$dirty || form_submit)"> Must include valid email</span>
+                <input type="button" id="update" value="Update" ng-click="updateData(userData)"><br>
+                <button id="view_directory"  ng-click="goToHome()">View Directory</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</form>

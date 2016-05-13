@@ -1,0 +1,14 @@
+<div id="container">
+    <div id="inner_container">
+        <div id="header">
+            <span>Directory</span>
+        </div>
+        <div id="section">
+            <div class="row" ng-repeat="user in userDetails">
+                <span  ng-click="editDetails(user.id)">{{user.firstName}}, {{user.lastName}}</span>
+                <button ng-click="deleteDirectory(user.id)">Delete</button>
+            </div>
+            <button id="add_contact" ng-click="addContact()">Add Contact</button>
+        </div>
+    </div>
+</div>

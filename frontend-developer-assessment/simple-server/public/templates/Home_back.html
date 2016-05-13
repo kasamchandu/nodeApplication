@@ -1,0 +1,11 @@
+<h1>Directory</h1>
+<div>
+    <ul>
+        <li ng-repeat="user in userDetails"><span>{{user.firstName}}, </span><span>{{user.lastName}}</span>
+        <input type="button" value="Delete" ng-click="deleteDirectory($index)">
+        </li>
+    </ul>
+    <div>
+        <input type="button" value="Add contact" ng-click="addDirectory()">
+    </div>
+</div>

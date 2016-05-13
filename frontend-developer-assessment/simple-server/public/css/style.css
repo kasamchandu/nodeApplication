@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+#container{
+    width: 1000px;
+    margin: auto;
+}
+.ContactInputs{
+    margin: 0 auto;
+}
+.ButtonDiv{
+    margin: 0 0 0 134px;
+}
+#inp1,#inp2,#inp3{
+    width: 705px;
+    padding: 5px;
+    color:#b2aaa8;
+}
+#submitButton,#viewButton{
+    width: 705px;
+    padding: 5px;
+    color:#fff;
+    font-size: 18px;
+    border: 0px;
+}
+#submitButton{
+    background-color: #fea500;
+}
+#viewButton{
+    background-color:#6666e2;
+}
+.headerElement{
+    border-bottom: 1px solid #808080;
+    font-size: 45px;
+    color: #808080;
+    font-weight: normal;
+}
+span{
+    color: #808080;
+}
+
+
+#section
+{
+    width: 700px;
+    margin: 35px 0px;
+}
+#section span{
+    color: #7f8084;
+    font-size: 26px;
+}
+#section button{
+    background-color: #6666e2;
+    color:#fff;
+    border: 0;
+    font-size: 26px;
+    float: right;
+    padding: 3px 30px;
+}
+.row{
+    margin: 25px 0 25px 10px;
+    height: 37px;
+}
+#section #add_contact{
+    margin-top: 35px;
+}
+
+
+
+/* edit_contact */
+
+#container{
+    width:1000px;
+    margin: 0 auto;
+}
+#inner_container{
+    padding: 20px 0px 0px 20px;
+}
+#header{
+    width:900px;
+    border-bottom: 3px solid #ccc;
+}
+#header span{
+    font-family: verdana;
+    font-size: 50px;
+    color: #808080;
+    margin: 0;
+}
+form{
+    margin-top: 60px;
+}
+input,#update,#view_directory,#section #add_contact{
+    width: 700px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#update,#section #add_contact{
+    background-color: #fea500;
+    border: 0;
+    color:#FFF;
+}
+#view_directory{
+    background-color: #6666e2;
+    border: 0;
+    color:#FFF;
+}
+#fname{
+    margin-top: 20px;
+}
